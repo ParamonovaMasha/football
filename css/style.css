@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrap {
+  background-color: darkgrey;
+  min-height: 100vh;
+  padding: 50px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.field {
+  /*border: 2px solid rgba(51, 51, 51, 0.184);*/
+  background-image: url(../img/Field.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 450px;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  /*display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(80px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px;*/
+}
+
+.sub-field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /*border: 2px solid black;*/
+  width: 250px;
+  height: 600px;
+  background-color: rgba(51, 51, 51, 0.184);
+  overflow: hidden;
+}
+
+.empty {
+  height: 60px;
+  width: 60px;
+  border: 2px solid black;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.fill img {
+  /*background-repeat: no-repeat;
+  background-position: left 1px top 2px;
+  background-size: cover;*/
+  height: 60px;
+  width: 60px;
+  transform: scale(1.1);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.hold {
+  height: 70px;
+  width: 70px;
+  overflow: hidden;
+}
+
+.hovered {
+  background-color: rgba(51, 51, 51, 0.184);
+}
